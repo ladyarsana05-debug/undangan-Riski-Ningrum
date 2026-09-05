@@ -39,3 +39,28 @@ section{padding:100px 20px}.section-title{text-align:center;font-size:clamp(42px
 @media(max-width:600px){
 .gallery-grid img{height:220px}
 }
+#lightbox{
+position:fixed;
+inset:0;
+z-index:9999;
+display:none;
+align-items:center;
+justify-content:center;
+background:#000e;
+padding:20px
+}
+
+#lightbox img{
+max-width:100%;
+max-height:90vh;
+object-fit:contain
+}
+
+#lightbox span{
+position:absolute;
+top:20px;
+right:25px;
+color:white;
+font-size:40px;
+cursor:pointer
+}
