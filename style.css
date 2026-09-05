@@ -1,1 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+:root {
+    --ivory: #f7f1e8;
+    --cream: #ece1d2;
+    --brown: #7a5c45;
+    --dark: #2f2925;
+    --gold: #b99763;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--ivory);
+    color: var(--dark);
+}
+
+body.locked {
+    overflow: hidden;
+}
+
+
+/* =========================
+   COVER PEMBUKA
+========================= */
+
+#opening {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(47, 41, 37, 0.35),
+            rgba(47, 41, 37, 0.55)
+        ),
+        var(--cream);
+
+    z-index: 9999;
+
+    transition: opacity 0.8s ease;
+}
+
+
+.opening-content {
+    padding: 30px;
+}
+
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 4px;
+
+    margin-bottom: 25px;
+
+    color: white;
+}
+
+
+.opening-content h1 {
+    font-family: Georgia, serif;
+
+    font-size: clamp(48px, 12vw, 90px);
+
+    font-weight: normal;
+
+    line-height: 1.1;
+
+    color: white;
+}
+
+
+.opening-content h1 span {
+    display: block;
+
+    font-size: 35px;
+
+    margin: 10px 0;
+
+    color: var(--gold);
+}
+
+
+.wedding-date {
+    margin-top: 25px;
+
+    color: white;
+
+    font-size: 14px;
+
+    letter-spacing: 3px;
+}
+
+
+/* TOMBOL */
+
+#openInvitation {
+    margin-top: 40px;
+
+    padding: 15px 30px;
+
+    border: 1px solid var(--gold);
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#openInvitation:hover {
+    background: var(--gold);
+
+    color: white;
+}
+
+
+/* =========================
+   ISI UNDANGAN
+========================= */
+
+.hidden {
+    display: none;
+}
+
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background: var(--ivory);
+}
+
+
+.hero p:first-child {
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    color: var(--brown);
+
+    margin-bottom: 25px;
+}
+
+
+.hero h2 {
+    font-family: Georgia, serif;
+
+    font-size: clamp(45px, 12vw, 80px);
+
+    font-weight: normal;
+
+    line-height: 1.1;
+}
+
+
+.hero h2 span {
+    display: block;
+
+    color: var(--gold);
+
+    font-size: 30px;
+
+    margin: 10px;
+}
+
+
+.hero p:last-child {
+    max-width: 500px;
+
+    margin-top: 30px;
+
+    line-height: 1.8;
+
+    color: var(--brown);
+}
