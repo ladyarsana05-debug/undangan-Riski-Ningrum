@@ -182,3 +182,14 @@ font-size:20px;
 cursor:pointer;
 display:none
 }
+.rsvp{text-align:center}
+.rsvp-btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 25px;
+background:var(--g);
+color:#fff;
+text-decoration:none;
+font-size:12px;
+letter-spacing:1px
+}
