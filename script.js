@@ -26,3 +26,7 @@ document.getElementById("seconds").innerHTML=Math.floor(z%60000/1000);
 },1000);
 
 });
+window.copyText=t=>{
+navigator.clipboard.writeText(t);
+alert("Nomor berhasil disalin!");
+}
