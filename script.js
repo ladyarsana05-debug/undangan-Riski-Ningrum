@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+const p=new URLSearchParams(location.search);
+const g=p.get("to");
 
+if(g){
+document.getElementById("guestName").innerHTML=g.replace(/\+/g," ");
+}
 const o = document.getElementById("opening");
 const b = document.getElementById("openBtn");
 const m = document.getElementById("music");
