@@ -26,3 +26,8 @@ section{padding:100px 20px}.section-title{text-align:center;font-size:clamp(42px
 .reveal{opacity:0;transform:translateY(30px);transition:.8s}.reveal.visible{opacity:1;transform:none}
 
 @media(max-width:700px){section{padding:70px 15px}.event-card{padding:35px 20px}}
+.countdown{text-align:center}
+#countdown{display:flex;justify-content:center;gap:12px;margin:35px auto}
+#countdown div{min-width:70px;padding:15px 8px;background:#fff8;border:1px solid #b0925d55}
+#countdown b{display:block;font-size:30px;color:var(--g)}
+#countdown span{font-size:10px;color:var(--r)}
