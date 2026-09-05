@@ -85,3 +85,34 @@ margin:10px
 color:var(--r);
 line-height:1.8
 }
+.gift{text-align:center}
+.bank-card{
+margin:20px auto;
+padding:25px;
+max-width:450px;
+background:#fff8;
+border:1px solid #b0925d55
+}
+.bank-card h3{
+font-family:"Cormorant Garamond",serif;
+font-size:32px;
+font-weight:500;
+color:var(--g)
+}
+.bank-card b{
+display:block;
+font-size:20px;
+letter-spacing:2px;
+margin:10px
+}
+.bank-card p{color:var(--r)}
+.bank-card button{
+margin-top:15px;
+padding:10px 18px;
+border:0;
+background:var(--g);
+color:white;
+cursor:pointer;
+font-size:11px;
+letter-spacing:1px
+}
