@@ -28,11 +28,24 @@
 <h2 class="section-title">Galeri Foto</h2>
 <div class="jawa-line"></div>
 
+<section class="gallery paper">
+<div class="container">
+<p class="eyebrow">OUR MOMENTS</p>
+<h2 class="section-title">Galeri Foto</h2>
+<div class="jawa-line"></div>
+
 <div class="gallery-grid">
-<img src="foto1.JPG">
-<img src="foto2.JPG">
-<img src="foto.JPEG">
-<img src="foto4.JPG">
+<img src="foto1.JPG" onclick="openImage(this.src)">
+<img src="foto2.JPG" onclick="openImage(this.src)">
+<img src="foto.JPEG" onclick="openImage(this.src)">
+<img src="foto4.JPG" onclick="openImage(this.src)">
+</div>
+</div>
+</section>
+
+<div id="lightbox" onclick="closeImage()">
+<span>&times;</span>
+<img id="lightbox-img">
 </div>
 
 </div>
