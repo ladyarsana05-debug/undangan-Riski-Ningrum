@@ -4,291 +4,575 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ananda & Ningrum</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="locked">
+
 <audio id="music" loop>
 <source src="music.mp3" type="audio/mpeg">
 </audio>
 
 <button id="musicBtn">♫</button>
+
+<!-- OPENING -->
+<div class="opening" id="opening">
 <div class="opening-content">
 
 <p class="eyebrow">THE WEDDING OF</p>
 
 <p class="guest-label">KEPADA YTH.</p>
-
 <h3 id="guestName">Tamu Undangan</h3>
-<h1>Ananda Riski<br><span class="gold-text">&</span><br>Ningrum</h1>
+
+<h1>
+Ananda Riski
+<br>
+<span class="gold-text">&</span>
+<br>
+Ningrum
+</h1>
+
 <p class="opening-date">13 • 09 • 2026</p>
-<button class="gold-btn" id="openBtn">✦ BUKA UNDANGAN</button>
-</div></div>
 
-<section class="hero"><div class="container">
-<p class="eyebrow">THE WEDDING OF</p>
-<h1>Ananda Riski Fahrudin<span class="hero-and">&</span>Ningrum Wulandari</h1>
-<p class="hero-date">13 SEPTEMBER 2026</p>
-</div></section>
- <p class="eyebrow">OUR MOMENTS</p>
-<h2 class="section-title">Galeri Foto</h2>
-<div class="jawa-line"></div>
+<button class="gold-btn" id="openBtn">
+✦ BUKA UNDANGAN
+</button>
 
-<section class="gallery paper">
-<div class="container">
-<p class="eyebrow">OUR MOMENTS</p>
-<h2 class="section-title">Galeri Foto</h2>
-<div class="jawa-line"></div>
-
-<div class="gallery-grid">
-<img src="foto1.JPG" onclick="openImage(this.src)">
-<img src="foto2.JPG" onclick="openImage(this.src)">
-<img src="foto.JPEG" onclick="openImage(this.src)">
-<img src="foto4.JPG" onclick="openImage(this.src)">
 </div>
+</div>
+
+
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+
+<p class="eyebrow">THE WEDDING OF</p>
+
+<h1>
+Ananda Riski Fahrudin
+<span class="hero-and">&</span>
+Ningrum Wulandari
+</h1>
+
+<p class="hero-date">13 SEPTEMBER 2026</p>
+
 </div>
 </section>
 
-<div id="lightbox" onclick="closeImage()">
-<span>&times;</span>
-<img id="lightbox-img">
+
+<!-- MEMPELAI -->
+<section class="couple-section paper">
+<div class="container narrow">
+
+<p class="eyebrow reveal">MEMPELAI</p>
+
+<h2 class="section-title reveal">
+Dengan segala kerendahan hati
+</h2>
+
+<div class="jawa-line reveal"></div>
+
+
+<div class="person reveal">
+
+<div class="person-photo">
+<img src="groom.PNG">
 </div>
-<section class="story beige">
+
+<p class="person-label">MEMPELAI PRIA</p>
+
+<h2 class="person-name">
+Ananda Riski Fahrudin, S.Psi.
+</h2>
+
+<p class="person-parent">
+Putra Bapak <strong>Sarjudi Ghani R</strong>
+& Ibu <strong>Sarwati</strong>
+</p>
+
+</div>
+
+
+<div class="ampersand reveal">&</div>
+
+
+<div class="person reveal">
+
+<div class="person-photo">
+<img src="bride.PNG">
+</div>
+
+<p class="person-label">MEMPELAI WANITA</p>
+
+<h2 class="person-name">
+Ningrum Wulandari
+</h2>
+
+<p class="person-parent">
+Putri Bapak <strong>Kasino</strong>
+& Ibu <strong>Susanti</strong>
+</p>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- COUNTDOWN -->
+<section class="countdown beige">
+<div class="container">
+
+<p class="eyebrow">SAVE THE DATE</p>
+
+<h2 class="section-title">
+Menuju Hari Bahagia
+</h2>
+
+<div class="jawa-line"></div>
+
+<div id="countdown">
+
+<div>
+<b id="days">00</b>
+<span>Hari</span>
+</div>
+
+<div>
+<b id="hours">00</b>
+<span>Jam</span>
+</div>
+
+<div>
+<b id="minutes">00</b>
+<span>Menit</span>
+</div>
+
+<div>
+<b id="seconds">00</b>
+<span>Detik</span>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ACARA -->
+<section class="event-section paper">
+<div class="container narrow">
+
+<p class="eyebrow reveal">SAVE THE DATE</p>
+
+<h2 class="section-title reveal">
+Rangkaian Acara
+</h2>
+
+<div class="jawa-line reveal"></div>
+
+
+<!-- ACARA 1 -->
+<div class="event-card reveal">
+
+<p class="event-number">01</p>
+
+<h3>Akad & Resepsi</h3>
+
+<div class="event-detail">
+
+<div class="event-icon">📅</div>
+
+<div>
+<strong>Minggu, 13 September 2026</strong>
+<p>Akad Pernikahan & Resepsi</p>
+</div>
+
+</div>
+
+
+<div class="event-detail">
+
+<div class="event-icon">📍</div>
+
+<div>
+<strong>Lokasi Acara</strong>
+
+<p>
+Rumah Bapak Kasino<br>
+Barepan RT 02/RW 03<br>
+Jagan, Bendosari, Sukoharjo
+</p>
+
+</div>
+
+</div>
+
+<a
+class="outline-btn"
+target="_blank"
+href="https://maps.app.goo.gl/Lnv4fU7rYvq9ahWq9?g_st=ic">
+
+📍 LIHAT LOKASI
+
+</a>
+
+</div>
+
+
+<div class="event-divider reveal">❦</div>
+
+
+<!-- ACARA 2 -->
+<div class="event-card reveal">
+
+<p class="event-number">02</p>
+
+<h3>Ngunduh Mantu</h3>
+
+<div class="event-detail">
+
+<div class="event-icon">📅</div>
+
+<div>
+<strong>Senin, 14 September 2026</strong>
+<p>Pukul 19.00 WIB</p>
+</div>
+
+</div>
+
+
+<div class="event-detail">
+
+<div class="event-icon">📍</div>
+
+<div>
+
+<strong>Lokasi Acara</strong>
+
+<p>
+Jatisobo RT 03/RW 06<br>
+Polokarto, Sukoharjo
+</p>
+
+</div>
+
+</div>
+
+
+<a
+class="outline-btn"
+target="_blank"
+href="https://maps.app.goo.gl/X4PDrH3qmuX15NGP9?g_st=ic">
+
+📍 LIHAT LOKASI
+
+</a>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- GALERI -->
+<section class="gallery beige">
+
+<div class="container">
+
+<p class="eyebrow">OUR MOMENTS</p>
+
+<h2 class="section-title">
+Galeri Foto
+</h2>
+
+<div class="jawa-line"></div>
+
+
+<div class="gallery-grid">
+
+<img src="foto1.JPG" onclick="openImage(this.src)">
+
+<img src="foto2.JPG" onclick="openImage(this.src)">
+
+<img src="foto.JPEG" onclick="openImage(this.src)">
+
+<img src="foto4.JPG" onclick="openImage(this.src)">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeImage()">
+
+<span>&times;</span>
+
+<img id="lightbox-img">
+
+</div>
+
+
+<!-- CERITA -->
+<section class="story paper">
+
 <div class="container narrow">
 
 <p class="eyebrow">OUR STORY</p>
-<h2 class="section-title">Perjalanan Cinta</h2>
+
+<h2 class="section-title">
+Perjalanan Cinta
+</h2>
+
 <div class="jawa-line"></div>
 
+
 <div class="story-item">
+
 <span>01</span>
+
 <h3>Awal Pertemuan</h3>
+
 <p>
 Setiap perjalanan memiliki awal yang sederhana.
 Pertemuan yang tidak disengaja membawa kami
 pada sebuah cerita yang indah.
 </p>
+
 </div>
 
+
 <div class="story-item">
+
 <span>02</span>
+
 <h3>Menjalin Kisah</h3>
+
 <p>
 Seiring berjalannya waktu, kami belajar
 untuk saling mengenal, memahami,
 dan tumbuh bersama.
 </p>
+
 </div>
 
+
 <div class="story-item">
+
 <span>03</span>
+
 <h3>Menuju Pernikahan</h3>
+
 <p>
 Dengan penuh keyakinan dan doa,
 kami memutuskan untuk melangkah
 bersama menuju ikatan suci pernikahan.
 </p>
+
 </div>
-<section class="gift paper">
+
+</div>
+
+</section>
+
+
+<!-- WEDDING GIFT -->
+<section class="gift beige">
+
 <div class="container narrow">
 
-</div>
-</section>
-</div>
-</section>
-</div>
-</section>
-<p class="hero-date">13 SEPTEMBER 2026</p>
-</div>
-</section>
-
-<section class="couple-section paper"><div class="container narrow">
-
-<p class="eyebrow reveal">MEMPELAI</p>
-<h2 class="section-title reveal">Dengan segala kerendahan hati</h2>
-<div class="jawa-line reveal"></div>
-
-<div class="person reveal">
-<div class="person-photo"><img src="groom.PNG"></div>
-<p class="person-label">MEMPELAI PRIA</p>
-<h2 class="person-name">Ananda Riski Fahrudin, S.Psi.</h2>
-<p class="person-parent">Putra Bapak <strong>Sarjudi Ghani R</strong> & Ibu <strong>Sarwati</strong></p>
-</div>
-
-<div class="ampersand reveal">&</div>
-
-<div class="person reveal">
-<div class="person-photo"><img src="bride.PNG"></div>
-<p class="person-label">MEMPELAI WANITA</p>
-<h2 class="person-name">Ningrum Wulandari</h2>
-<p class="person-parent">Putri Bapak <strong>Kasino</strong> & Ibu <strong>Susanti</strong></p>
-</div>
-
-</div></section> 
-  <section class="countdown beige">
-<div class="container">
-<p class="eyebrow">SAVE THE DATE</p>
-<h2 class="section-title">Menuju Hari Bahagia</h2>
-
-<div id="countdown">
-<div><b id="days">00</b><span>Hari</span></div>
-<div><b id="hours">00</b><span>Jam</span></div>
-<div><b id="minutes">00</b><span>Menit</span></div>
-<div><b id="seconds">00</b><span>Detik</span></div>
-</div>
-<section class="gallery paper">
-<div class="container">
-
-
-
-<section class="event-section beige"><div class="container narrow">
-
-<p class="eyebrow reveal">SAVE THE DATE</p>
-<h2 class="section-title reveal">Rangkaian Acara</h2>
-<div class="jawa-line reveal"></div>
-
-<div class="event-card reveal">
-<p class="event-number">01</p>
-<h3>Akad & Resepsi</h3>
-
-<div class="event-detail">
-<div class="event-icon">📅</div>
-<div><strong>Minggu, 13 September 2026</strong><p>Akad Pernikahan & Resepsi</p></div>
-</div>
-
-<div class="event-detail">
-<div class="event-icon">📍</div>
-<div><strong>Lokasi Acara</strong><p>Rumah Bapak Kasino<br>Barepan RT 02/RW 03<br>Jagan, Bendosari, Sukoharjo</p></div>
-</div>
-
-<a class="outline-btn" target="_blank" href="https://maps.app.goo.gl/Lnv4fU7rYvq9ahWq9?g_st=ic">📍 LIHAT LOKASI</a>
-</div>
-
-<div class="event-divider reveal">❦</div>
-
-<div class="event-card reveal">
-<p class="event-number">02</p>
-<h3>Ngunduh Mantu</h3>
-
-<div class="event-detail">
-<div class="event-icon">📅</div>
-<div><strong>Senin, 14 September 2026</strong><p>Pukul 19.00 WIB</p></div>
-</div>
-
-<div class="event-detail">
-<div class="event-icon">📍</div>
-<div><strong>Lokasi Acara</strong><p>Jatisobo RT 03/RW 06<br>Polokarto, Sukoharjo</p></div>
-</div>
-
-<a class="outline-btn" target="_blank" href="https://maps.app.goo.gl/X4PDrH3qmuX15NGP9?g_st=ic">📍 LIHAT LOKASI</a>
-</div>
-<p class="lead">
 <p class="eyebrow">WEDDING GIFT</p>
-<h2 class="section-title">Amplop Digital</h2>
+
+<h2 class="section-title">
+Amplop Digital
+</h2>
+
 <div class="jawa-line"></div>
+
+
+<p class="lead">
+
 Doa restu Anda merupakan hadiah terindah bagi kami.
+
+<br><br>
+
 Namun apabila ingin memberikan tanda kasih,
 dapat melalui rekening berikut.
+
 </p>
 
+
 <div class="bank-card">
+
 <h3>BCA</h3>
+
 <b>8265305101</b>
+
 <p>Ningrum Wulandari</p>
-<button onclick="copyText('8265305101')">SALIN NOMOR</button>
+
+<button onclick="copyText('8265305101')">
+SALIN NOMOR
+</button>
+
 </div>
 
+
 <div class="bank-card">
+
 <h3>BCA</h3>
+
 <b>8265250196</b>
+
 <p>Ananda Riski Fahrudin</p>
-<button onclick="copyText('8265250196')">SALIN NOMOR</button>
+
+<button onclick="copyText('8265250196')">
+SALIN NOMOR
+</button>
+
 </div>
 
+
 <div class="bank-card">
+
 <h3>DANA</h3>
+
 <b>082135254315</b>
+
 <p>Ananda Riski Fahrudin</p>
-<button onclick="copyText('082135254315')">SALIN NOMOR</button>
+
+<button onclick="copyText('082135254315')">
+SALIN NOMOR
+</button>
+
 </div>
-</div></section>
-<section class="rsvp beige">
+
+</div>
+
+</section>
+
+
+<!-- RSVP -->
+<section class="rsvp paper">
+
 <div class="container narrow">
 
 <p class="eyebrow">RSVP</p>
-<h2 class="section-title">Konfirmasi Kehadiran</h2>
+
+<h2 class="section-title">
+Konfirmasi Kehadiran
+</h2>
+
 <div class="jawa-line"></div>
 
+
 <p class="lead">
-Merupakan suatu kehormatan bagi kami apabila
-Bapak/Ibu/Saudara/i dapat hadir untuk memberikan
-doa restu di hari bahagia kami.
+
+Mohon kesediaannya untuk mengisi
+konfirmasi kehadiran serta memberikan
+ucapan dan doa untuk kami.
+
 </p>
 
-<div class="rsvp-box">
 
-<h3>Apakah Anda Akan Hadir?</h3>
+<a
+class="rsvp-btn"
+target="_blank"
+href="https://docs.google.com/forms/d/e/1FAIpQLScmqRvgkFZd6UwTQGzC87YfQv_O_3lVYzCrctOG9vY6WZx50Q/viewform?usp=publish-editor">
 
-<a class="rsvp-btn hadir"
-href="https://wa.me/6285713028450?text=Halo%20Ananda%2C%20saya%20akan%20hadir%20di%20acara%20pernikahan%20Anda."
-target="_blank">
-✓ SAYA AKAN HADIR
+💌 ISI KONFIRMASI KEHADIRAN
+
 </a>
 
-<a class="rsvp-btn tidak"
-href="https://wa.me/6285713028450?text=Halo%20Ananda%2C%20maaf%20saya%20belum%20bisa%20hadir.%20Semoga%20acara%20pernikahannya%20lancar."
-target="_blank">
-✕ BELUM BISA HADIR
-</a>
-
-</div>
 
 <p class="contact-text">
+
 Konfirmasi juga dapat menghubungi:
+
 </p>
+
 
 <div class="contact">
 
-<a href="https://wa.me/6285713028450" target="_blank">
+<a
+href="https://wa.me/6285713028450"
+target="_blank">
+
 📱 Ananda Riski
+
 </a>
 
-<a href="https://wa.me/6281229442030" target="_blank">
+
+<a
+href="https://wa.me/6281229442030"
+target="_blank">
+
 📱 Ningrum Wulandari
-</a>
-<section class="rsvp beige">
-<div class="container narrow">
-<p class="eyebrow">RSVP</p>
-<h2 class="section-title">Konfirmasi Kehadiran</h2>
-<div class="jawa-line"></div>
 
-<p class="lead">
-Mohon kesediaannya untuk mengisi konfirmasi kehadiran
-dan memberikan ucapan serta doa untuk kami.
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PENUTUP -->
+<section class="closing beige">
+
+<div class="container reveal">
+
+<p class="eyebrow">
+TERIMA KASIH
 </p>
 
-<a class="rsvp-btn" target="_blank"
-href="https://docs.google.com/forms/d/e/1FAIpQLScmqRvgkFZd6UwTQGzC87YfQv_O_3lVYzCrctOG9vY6WZx50Q/viewform?usp=publish-editor">
-💌 ISI KONFIRMASI KEHADIRAN
-</a>
 
-</div>
-</section>
-</div>
+<h2>
+Merupakan suatu kehormatan
+</h2>
 
-</div>
-</section>
-<section class="closing paper"><div class="container reveal">
-<p class="eyebrow">TERIMA KASIH</p>
-<h2>Merupakan suatu kehormatan</h2>
-<p class="lead">Atas kehadiran dan doa restu Bapak/Ibu/Saudara/i dalam hari bahagia kami.</p>
+
+<p class="lead">
+
+Atas kehadiran dan doa restu
+Bapak/Ibu/Saudara/i dalam
+hari bahagia kami.
+
+</p>
+
+
 <div class="jawa-line"></div>
-<div class="closing-name">Ananda Riski Fahrudin<br><span class="gold-text">&</span><br>Ningrum Wulandari</div>
-</div></section>
+
+
+<div class="closing-name">
+
+Ananda Riski Fahrudin
+
+<br>
+
+<span class="gold-text">&</span>
+
+<br>
+
+Ningrum Wulandari
+
+</div>
+
+</div>
+
+</section>
+
 
 <script src="script.js"></script>
+
 </body>
 </html>
