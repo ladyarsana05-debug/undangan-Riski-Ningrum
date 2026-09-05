@@ -116,3 +116,54 @@ cursor:pointer;
 font-size:11px;
 letter-spacing:1px
 }
+.rsvp{text-align:center}
+.rsvp-box{
+max-width:500px;
+margin:30px auto;
+padding:30px 20px;
+background:#fff8;
+border:1px solid #b0925d55
+}
+.rsvp-box h3{
+font-family:"Cormorant Garamond",serif;
+font-size:32px;
+font-weight:500;
+margin-bottom:25px
+}
+.rsvp-btn{
+display:block;
+max-width:300px;
+margin:12px auto;
+padding:14px;
+text-decoration:none;
+font-size:11px;
+letter-spacing:1px;
+border:1px solid var(--g);
+transition:.3s
+}
+.hadir{
+background:var(--g);
+color:white
+}
+.tidak{
+color:var(--g)
+}
+.rsvp-btn:hover{
+transform:translateY(-2px)
+}
+.contact-text{
+margin-top:35px;
+color:var(--r)
+}
+.contact{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:15px
+}
+.contact a{
+color:var(--g);
+text-decoration:none;
+font-size:13px
+}
