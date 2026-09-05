@@ -1,59 +1,142 @@
-document.addEventListener("DOMContentLoaded",()=>{
+document.addEventListener("DOMContentLoaded", () => {
 
-const o=document.getElementById("opening"),
-b=document.getElementById("openBtn"),
-m=document.getElementById("music"),
-mb=document.getElementById("musicBtn");
+const o = document.getElementById("opening");
+const b = document.getElementById("openBtn");
+const m = document.getElementById("music");
+const mb = document.getElementById("musicBtn");
 
-b?.addEventListener("click",()=>{
-o.classList.add("hidden");
-document.body.classList.remove("locked");
+/* BUKA UNDANGAN + MULAI MUSIK */
+b?.addEventListener("click", () => {
 
-m?.play();
-mb.style.display="block";
-});
+  o?.classList.add("hidden");
+  document.body.classList.remove("locked");
 
-mb?.addEventListener("click",()=>{
-if(m.paused){
-m.play();
-mb.innerHTML="♫";
-}else{
-m.pause();
-mb.innerHTML="Ⅱ";
-}
-});
-
-const r=document.querySelectorAll(".reveal");
-const x=new IntersectionObserver(e=>e.forEach(i=>{
-if(i.isIntersecting)i.target.classList.add("visible")
-}),{threshold:.15});
-
-r.forEach(i=>x.observe(i));
-
-const d=new Date("Sep 13,2026 00:00:00").getTime();
-
-setInterval(()=>{
-let z=Math.max(0,d-Date.now());
-
-document.getElementById("days").innerHTML=Math.floor(z/86400000);
-document.getElementById("hours").innerHTML=Math.floor(z%86400000/3600000);
-document.getElementById("minutes").innerHTML=Math.floor(z%3600000/60000);
-document.getElementById("seconds").innerHTML=Math.floor(z%60000/1000);
-},1000);
+  if (m) {
+    m.play()
+      .then(() => {
+        console.log("Musik berhasil diputar");
+        if (mb) {
+          mb.style.display = "block";
+          mb.innerHTML = "♫";
+        }
+      })
+      .catch((error) => {
+        console.log("Musik gagal diputar:", error);
+        if (mb) {
+          mb.style.display = "block";
+          mb.innerHTML = "▶";
+        }
+      });
+  }
 
 });
 
-window.openImage=s=>{
-let l=document.getElementById("lightbox");
-document.getElementById("lightbox-img").src=s;
-l.style.display="flex";
-}
 
-window.closeImage=()=>{
-document.getElementById("lightbox").style.display="none";
-}
+/* TOMBOL PLAY / PAUSE MUSIK */
+mb?.addEventListener("click", () => {
 
-window.copyText=t=>{
-navigator.clipboard.writeText(t);
-alert("Nomor berhasil disalin!");
-}
+  if (!m) return;
+
+  if (m.paused) {
+
+    m.play()
+      .then(() => {
+        mb.innerHTML = "♫";
+      })
+      .catch(error => {
+        console.log(error);
+      });
+
+  } else {
+
+    m.pause();
+    mb.innerHTML = "Ⅱ";
+
+  }
+
+});
+
+
+/* ANIMASI REVEAL */
+const r = document.querySelectorAll(".reveal");
+
+const x = new IntersectionObserver(entries => {
+  entries.forEach(i => {
+    if (i.isIntersecting) {
+      i.target.classList.add("visible");
+    }
+  });
+}, {
+  threshold: 0.15
+});
+
+r.forEach(i => x.observe(i));
+
+
+/* COUNTDOWN */
+const d = new Date("Sep 13, 2026 00:00:00").getTime();
+
+setInterval(() => {
+
+  let z = Math.max(0, d - Date.now());
+
+  const days = document.getElementById("days");
+  const hours = document.getElementById("hours");
+  const minutes = document.getElementById("minutes");
+  const seconds = document.getElementById("seconds");
+
+  if (days) days.innerHTML = Math.floor(z / 86400000);
+
+  if (hours)
+    hours.innerHTML = Math.floor(
+      z % 86400000 / 3600000
+    );
+
+  if (minutes)
+    minutes.innerHTML = Math.floor(
+      z % 3600000 / 60000
+    );
+
+  if (seconds)
+    seconds.innerHTML = Math.floor(
+      z % 60000 / 1000
+    );
+
+}, 1000);
+
+});
+
+
+/* GALERI FOTO */
+window.openImage = s => {
+
+  const l = document.getElementById("lightbox");
+  const img = document.getElementById("lightbox-img");
+
+  if (l && img) {
+    img.src = s;
+    l.style.display = "flex";
+  }
+
+};
+
+
+window.closeImage = () => {
+
+  const l = document.getElementById("lightbox");
+
+  if (l) {
+    l.style.display = "none";
+  }
+
+};
+
+
+/* COPY TEXT */
+window.copyText = t => {
+
+  navigator.clipboard.writeText(t);
+
+  alert("Nomor berhasil disalin!");
+
+};
