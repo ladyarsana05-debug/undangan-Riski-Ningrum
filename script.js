@@ -1,25 +1,21 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded",()=>{
 
-    const opening = document.getElementById("opening");
-    const mainContent = document.getElementById("mainContent");
-    const openInvitation = document.getElementById("openInvitation");
+const o=document.getElementById("opening"),
+b=document.getElementById("openBtn");
 
+b?.addEventListener("click",()=>{
+o.classList.add("hidden");
+document.body.classList.remove("locked");
+});
 
-    openInvitation.addEventListener("click", function () {
+const r=document.querySelectorAll(".reveal");
 
-        opening.style.opacity = "0";
+const x=new IntersectionObserver(e=>{
+e.forEach(i=>{
+if(i.isIntersecting)i.target.classList.add("visible");
+});
+},{threshold:.15});
 
-
-        setTimeout(function () {
-
-            opening.style.display = "none";
-
-            mainContent.classList.remove("hidden");
-
-            document.body.classList.remove("locked");
-
-        }, 800);
-
-    });
+r.forEach(i=>x.observe(i));
 
 });
